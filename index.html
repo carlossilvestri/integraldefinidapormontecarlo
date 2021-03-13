@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integral Definida</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="mt-5">
+            <h1 class="mb-5 text-center">Integral por método de Monte Carlo.</h1>
+          <input id="numberInput" 
+            class="form-control form-control-lg"
+            type="number"
+            placeholder="Ingrese el número de simulaciones"
+            aria-label=".form-control-lg example"
+            min="1"
+            pattern="^[0-9]+"
+            onkeypress="return event.charCode >= 48"
+          />
+          <button class="btn btn-success mt-4" id="btnCalcular" disabled>Calcular</button>
+        </div>
+        <div class="container" id="colocarResultado">
+            <!-- <div class="alert alert-info mt-5 g" role="alert">
+                <p>Realizado aproximado de la integral por el método de Monte Carlo: 26.551.729</p>
+                <p>(%) de error: </p>
+              </div> -->
+        </div>
+        <div class="container">
+            <h2 class="display-6 mt-5 mb-4">Resultado matemático de la integral:</h2>
+            <img src="img/integral.jpg" alt="Integral">
+        </div>
+        <h2 class="display-6 mt-5">Realizado por:</h2>
+        <div class="alert alert-info mt-5 g" role="alert">
+          Realizado por:
+          <p>Silvestri, Carlos. C.I: 26.551.729</p>
+          <p>Rincón, Pedro. C.I: 27.849.02</p>
+          <p>Vera, Valerie. C.I: 27.192.811</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavasCript Files -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

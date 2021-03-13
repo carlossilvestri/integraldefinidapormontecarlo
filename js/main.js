@@ -37,7 +37,7 @@ function crearHTML(rApro, porcError){
     const div = document.createElement("div"),
         cuerpo = `
             <div class="alert alert-info mt-5 g" role="alert">
-                <p>Realizado aproximado de la integral por el método de Monte Carlo: ${rApro}</p>
+                <p>Resultado aproximado de la integral por el método de Monte Carlo: ${rApro}</p>
                 <p>(%) de error: ${porcError}</p>
               </div>
         `;

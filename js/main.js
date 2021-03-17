@@ -13,7 +13,7 @@ function calculos(){
     let numeroDeSimulaciones = inputNumber.value;
     if(numeroDeSimulaciones > 0){
         // Empezar la simulacion.
-        const resultadoExacto = Math.pow(3,3) + Math.pow(3,2) + Math.pow(2,3) + Math.pow(2,2);
+        const resultadoExacto = (Math.pow(3,3) + Math.pow(3,2)) -(Math.pow(2,3) + Math.pow(2,2));
         let resultadoAprox = 0;
         let variableAcumuladora = 0;
         for(let i = 0; i < numeroDeSimulaciones; i++){
@@ -38,7 +38,7 @@ function crearHTML(rApro, porcError){
         cuerpo = `
             <div class="alert alert-info mt-5 g" role="alert">
                 <p>Resultado aproximado de la integral por el método de Monte Carlo: ${rApro}</p>
-                <p>(%) de error: ${porcError}</p>
+                <p>(%) de error entre valor real y el valor aproximado: ${porcError}</p>
               </div>
         `;
         div.innerHTML = cuerpo;
